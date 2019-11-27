@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane styleClass="archorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kholdy.widget_weather.Controller">
+   <children>
+      <Pane prefHeight="135.0" prefWidth="200.0" styleClass="pane">
+         <children>
+            <Label fx:id="temp" layoutX="10.0" layoutY="50.0" prefHeight="20.0" prefWidth="140.0" styleClass="temp" text=".........." />
+            <Label fx:id="weath" layoutX="10.0" layoutY="29.0" prefHeight="20.0" prefWidth="180.0" styleClass="weath" text=".........." />
+            <Label fx:id="wind" layoutX="10.0" layoutY="70.0" prefHeight="20.0" prefWidth="130.0" styleClass="wind" text=".........." />
+            <Label fx:id="pressure" layoutX="10.0" layoutY="110.0" prefHeight="20.0" prefWidth="180.0" styleClass="pressure" text=".........." />
+            <ImageView fx:id="refrash" fitHeight="25.0" fitWidth="25.0" layoutX="120.0" layoutY="2.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh_32px.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="city" alignment="CENTER" layoutX="20.0" layoutY="4.0" prefHeight="20.0" prefWidth="90.0" styleClass="city" text=".........." />
+            <ImageView fx:id="setting" fitHeight="25.0" fitWidth="25.0" layoutX="147.0" layoutY="2.0" onMouseClicked="#setting" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="close" fitHeight="25.0" fitWidth="25.0" layoutX="174.0" layoutY="2.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close_window_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="weather_icon" fitHeight="60.0" fitWidth="60.0" layoutX="129.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="data" layoutX="10.0" layoutY="90.0" prefHeight="20.0" prefWidth="110.0" styleClass="data" text=".........." />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

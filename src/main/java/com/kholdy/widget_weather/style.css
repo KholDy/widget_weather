@@ -1,0 +1,43 @@
+
+.rootNode {
+	-fx-background-color: TRANSPARENT;
+}
+
+.archorPane {
+	-fx-background-color: TRANSPARENT;
+}
+
+.pane {
+    -fx-background-color: rgba(91, 119, 125, 0.5);
+	-fx-font-size: 15px; 
+	 -fx-background-radius: 50 10 90 10;
+	 -fx-border-top-right-radius: 30px 15px ;
+	 -fx-font-family: sans-serif;
+}
+
+.city {
+	-fx-font-weight: 700;
+	-fx-opacity: 1;
+}
+
+.weath {
+	-fx-font-size: 70%;
+}
+
+.wind {
+	-fx-font-size: 70%;
+}
+
+.pressure {
+	-fx-font-size: 70%;
+}
+
+.data {
+	-fx-font-size: 70%;
+}
+
+.temp {
+	-fx-color: black;
+		
+	-fx-font-size: 70%; 
+}
